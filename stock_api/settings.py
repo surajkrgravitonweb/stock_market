@@ -29,7 +29,7 @@ DEBUG = False
 
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['localhost', 'graviton123.pythonanywhere.com']
+ALLOWED_HOSTS = ['*', 'graviton123.pythonanywhere.com']
 
 
 
