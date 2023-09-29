@@ -22,6 +22,8 @@ urlpatterns = [
     path('',include('main.urls')),
     path('account/',include('account.urls')),
     path('growadmin/',include('addmin.urls')),
+    path('rolebased/',include('rolebased.urls')),
+
 
 
 ]

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'account',
     'corsheaders',
     'addmin',
+    'rolebased',
     
     
     
@@ -85,6 +86,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'stock_api.wsgi.application'
 
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -127,7 +129,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+AUTH_USER_MODEL ='rolebased.User'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
