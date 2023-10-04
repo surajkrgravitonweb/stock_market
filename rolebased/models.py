@@ -55,3 +55,10 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.username
+    
+
+
+class OTPVerifiaction(models.Model):
+        phone_number = models.IntegerField()
+        otp = models.CharField(max_length=4)
+        is_verfied = models.BooleanField(default=False)
